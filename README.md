@@ -54,6 +54,8 @@ The following gems are built into both recipes:
 - ruby-shadow
 - gpgme
 - puppet
+- hiera-eyaml
+- hiera-eyaml-gpg
 
 The following extra gems are included in the `recipe-aws.rb` build:
 - aws-sdk
@@ -63,7 +65,7 @@ Package contents
 ----------------
 
 Besides Ruby and associated gems, the package also places scripts to run the puppet, facter and
-hiera binaries in /usr/bin using update-alternatives. It deploys an appropriate init script 
+hiera binaries in /usr/bin using update-alternatives. It deploys an appropriate init script
 based on the official Puppetlabs script, config files, and files in `/etc/default` / `/etc/sysconfig`.
 
 How do I build the package?
